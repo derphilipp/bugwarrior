@@ -39,7 +39,7 @@ class TaigaIssue(Issue):
             self.URL: self.extra['url'],
 
             'priority': self.origin['default_priority'],
-            'tags': self.record['tags'],
+            'tags': self.record['tags'][0],
             self.FOREIGN_ID: self.record['ref'],
             self.SUMMARY: self.record['subject'],
         }
